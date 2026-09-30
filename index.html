@@ -9,7 +9,7 @@
   </head>
   <body style="margin: 0; overflow: hidden;">
     <a-scene xr-mode-ui="XRMode: xr;"> 
-    <a-asset-item id="Dancing Twerk" src="Dancing Twerk.fbx"></a-asset-item>
+    <a-asset-item id="Twerk" src="Dancing Twerk.glb"></a-asset-item>
   </a-assets>   
 
   
@@ -20,11 +20,13 @@
 
 
 <a-entity
-  gltf-model="#Dancing Twerk"
+  gltf-model="#Twerk"
+  position="0 0 0"
   rotation="0 0 0"   
   scale="1 1 1"
   animation-mixer="clip: *; loop: repeat"
-></a-entity>
+  shadow="cast: true; receive: false"></a-entity>
+  
       <a-entity camera look-controls position="0 1.6 3"></a-entity>
     </a-scene>
   </body>
